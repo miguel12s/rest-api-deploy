@@ -104,6 +104,8 @@ app.patch('/movies/:id', (req, res) => {
 //   }
 //   res.send()
 // })
-app.listen(4000, (req, res) => {
+
+const PORT = process.env.PORT ?? 1234
+app.listen(PORT, () => {
   console.log('servidor escuchando en el puerto 4000')
 })
